@@ -23,7 +23,7 @@ jobs:
         add_git_labels: true
         always_pull: true
     - name: 🐳 Promote Docker image
-      uses: docker/build-push-action@v1
+      uses: timperman/artifactory-promote-action@v1
       with:
         url: https://krogertechnologyprodusw.jfrog.io
         username: ${{ secrets.DOCKER_USERNAME }}
